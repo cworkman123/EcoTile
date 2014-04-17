@@ -52,29 +52,68 @@ body{
 
 
 
-.navigation{
-    float: right;
-    width: 100%;
 
-    
+
+
+/* Starter CSS for Flyout Menu */
+.navigation,
+.navigation ul,
+.navigation li .navigation a {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 14px;
+  font-family: Helvetica;
+  line-height: 1;
 }
-
-.navigation ul{
-    margin: 0;
-    padding: 0;
+.navigation {
+  width: auto;
 }
-
-.navigation ul li{
-    list-style-type: none;
-    display: inline;
+.navigation ul {
+  zoom: 1;
+  background: #a7bc7a url(images/pattern.png) top left repeat;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid #839b4e;
+  -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
 }
-
-.navigation li a{
-    display: block;
-    float: right;
-    padding: 5px 10px;
-    text-decoration: none;
-    
+.navigation ul:before {
+  content: '';
+  display: block;
 }
-
-.navigation li a:hover {background: #383;}
+.navigation ul:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.navigation a,
+.navigation a:link,
+.navigation a:visited {
+  padding: 15px 20px;
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  text-shadow: 0 -1px 1px #586835;
+  border-right: 1px solid #839b4e;
+}
+.navigation a:hover {
+  color: #586835;
+  text-shadow: 0 1px 1px #bdcd9c;
+}
+.navigation li {
+  float: left;
+  border-right: 1px solid #b2c58b;
+}
+.navigation li:hover {
+  background: #9cb369 url(images/pattern.png) top left repeat;
+}
+.navigation li:first-child {
+  border-left: none;
+  -webkit-border-radius: 4px 0 0 4px;
+  -moz-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
+}
