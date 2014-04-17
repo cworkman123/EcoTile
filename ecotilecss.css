@@ -27,36 +27,54 @@ body{
     background-attachment: fixed;
 }
 
-.bquote{
-  
-    
+
+.bq{
+    padding-top: 40px;
 }
 
+.bquote{
+  font: 18px/30px normal Tahoma, sans-serif;
+  padding-top: 22px;
+  margin: 5px;
+  background-image: url(images/openquote1.gif);
+  background-position: top left;
+  background-repeat: no-repeat;
+  text-indent: 65px;
+  }
+  
+  
+  .bquote span {
+    display: block;
+    background-image: url(images/closequote3.gif);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+} 
 
 
-#navigation{
+
+.navigation{
     float: right;
     width: 100%;
-    background: lawngreen;
+
     
 }
 
-#navigation ul{
+.navigation ul{
     margin: 0;
     padding: 0;
 }
 
-#navigation ul li{
+.navigation ul li{
     list-style-type: none;
     display: inline;
 }
 
-#navigation li a{
+.navigation li a{
     display: block;
-    float: left;
+    float: right;
     padding: 5px 10px;
     text-decoration: none;
     
 }
 
-#navigation li a:hover {background: #383;}
+.navigation li a:hover {background: #383;}
