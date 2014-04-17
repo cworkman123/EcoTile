@@ -1,0 +1,62 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 17, 2014, 12:07:55 PM
+    Author     : Channing
+*/
+
+html{
+background: url(green_background.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+body{
+    background: url(green_background.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bquote{
+  
+    
+}
+
+
+
+#navigation{
+    float: right;
+    width: 100%;
+    background: lawngreen;
+    
+}
+
+#navigation ul{
+    margin: 0;
+    padding: 0;
+}
+
+#navigation ul li{
+    list-style-type: none;
+    display: inline;
+}
+
+#navigation li a{
+    display: block;
+    float: left;
+    padding: 5px 10px;
+    text-decoration: none;
+    
+}
+
+#navigation li a:hover {background: #383;}
